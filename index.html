@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Valve Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Valve Selector!</h1>
+        <p>Let's find the perfect valve for your home.</p>
+    </header>
+
+    <section class="selector">
+        <h2>Step 1: What type of valve do you need?</h2>
+        <div class="option-container">
+            <button class="option-btn" id="ball-valve">Ball Valve</button>
+            <button class="option-btn" id="gate-valve">Gate Valve</button>
+            <button class="option-btn" id="check-valve">Check Valve</button>
+            <button class="option-btn" id="globe-valve">Globe Valve</button>
+        </div>
+    </section>
+
+    <section class="selector" id="system-type-section" style="display: none;">
+        <h2>Step 2: What system do you need the valve for?</h2>
+        <div class="option-container">
+            <button class="option-btn" id="water-system">Water System</button>
+            <button class="option-btn" id="heating-system">Heating System</button>
+            <button class="option-btn" id="gas-system">Gas System</button>
+        </div>
+    </section>
+
+    <section class="recommendations" id="recommendations" style="display: none;">
+        <h2>Recommended Valve</h2>
+        <div id="recommended-valve">
+            <!-- Valve recommendations will appear here -->
+        </div>
+        <button class="buy-btn">Buy Now</button>
+    </section>
+
+    <footer>
+        <p>Powered by Valve Selector. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
